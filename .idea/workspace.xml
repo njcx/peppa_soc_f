@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bdfff3f3-6e02-4fb6-885c-91ffbada9fe4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets_inventory/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets_inventory/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bug_life/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bug_life/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bug_life/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bug_life/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/hids/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/hids/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/honeypot/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/honeypot/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/log_analysis/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/log_analysis/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/nids/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/nids/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scanner_c/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/scanner_c/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scanner_c/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/scanner_c/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/waf/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/waf/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_soc.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_soc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +29,7 @@
         <counts>
           <entry key="log" value="1" />
           <entry key="md" value="2" />
-          <entry key="py" value="112" />
+          <entry key="py" value="114" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -49,43 +37,25 @@
         <counts>
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="112" />
+          <entry key="Python" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="366" />
+          <entry key="py" value="372" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="366" />
+          <entry key="Python" value="372" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/hids/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/honeypot/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/log_analysis/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,6 +101,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets_inventory/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="925">
+              <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scanner_c/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -140,11 +119,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/bug_life/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="147">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="9" selection-end-line="38" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets_inventory/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" lean-forward="true" selection-end-line="5" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -176,7 +164,6 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/peppa_soc/__init__.py" />
         <option value="$PROJECT_DIR$/peppa_soc/settings.py" />
-        <option value="$PROJECT_DIR$/app/assets_inventory/views.py" />
         <option value="$PROJECT_DIR$/app/bug_life/__init__.py" />
         <option value="$PROJECT_DIR$/app/hids/__init__.py" />
         <option value="$PROJECT_DIR$/app/honeypot/__init__.py" />
@@ -205,6 +192,7 @@
         <option value="$PROJECT_DIR$/app/waf/serializers.py" />
         <option value="$PROJECT_DIR$/app/scanner_c/views.py" />
         <option value="$PROJECT_DIR$/app/bug_life/views.py" />
+        <option value="$PROJECT_DIR$/app/assets_inventory/views.py" />
       </list>
     </option>
   </component>
@@ -416,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588085861997</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1588086954006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588086954006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -432,12 +427,12 @@
     <frame x="47" y="23" width="2560" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25178713" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25178713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23293173" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23293173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -653,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets_inventory/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="4" selection-end-line="6" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/peppa_soc/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -693,20 +681,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets_inventory/models.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets_inventory/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bug_life/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="29" lean-forward="true" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/hids/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -764,10 +738,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/bug_life/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="29" lean-forward="true" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/bug_life/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="147">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="9" selection-end-line="38" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets_inventory/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets_inventory/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
         </state>
       </provider>
     </entry>
