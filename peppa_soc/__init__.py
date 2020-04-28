@@ -1,15 +1,34 @@
-from sanic import Sanic
-from sanic_restplus import Api
-from sanic_restplus.restplus import restplus
-from spf import SanicPluginsFramework
-app = Sanic(__name__)
-spf = SanicPluginsFramework(app)
-rest_assoc = spf.register_plugin(restplus)
+from .settings import *
+from flask import Flask
+from flask_restx import Api
 
 
-api = Api(version='1.0', title='TodoMVC API',
-          description='A simple TodoMVC API')
+authorizations = {
+    'apikey': {
+        'type': 'apiKey',
+        'in': 'header',
+        'name': 'Waf-API-Token'
+    }
+}
+
+api = Api(version="V1.0",
+          title="WAF API",
+          description="This waf api powered by Flask",
+          authorizations=authorizations,
+          security='apikey')
+
+if Env == 'prod':
+    api = Api(version="V1.0",
+              title="WAF API",
+              description="This waf api powered by Flask",
+              authorizations=authorizations,
+              security='apikey',
+              doc=False)
 
 
-
-
+def create_app(config_name):
+    app = Flask(__name__)
+    app.config.from_object(config[config_name])
+    config[config_name].init_app(app)
+    api.init_app(app)
+    return app
