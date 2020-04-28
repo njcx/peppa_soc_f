@@ -1,6 +1,7 @@
 from flask_script import Manager, Shell
 from peppa_soc import create_app, api
 from peppa_soc import Env
+from app import *
 import logging
 
 if Env == 'dev':
@@ -23,8 +24,16 @@ handler.setFormatter(logging_format)
 app.logger.addHandler(handler)
 
 api.namespaces = []
-# api.add_namespace(rule_waf_configure_namespace)
-
+api.add_namespace(user_n)
+api.add_namespace(waf_n)
+api.add_namespace(scanner_n)
+api.add_namespace(nids_n)
+api.add_namespace(log_analysis_n)
+api.add_namespace(honeypot_n)
+api.add_namespace(hids_n)
+api.add_namespace(bug_life_n)
+api.add_namespace(assets_inventory_n)
 
 if __name__ == '__main__':
     manager.run()
+
