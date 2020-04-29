@@ -33,16 +33,11 @@ def verify_token(token):
         data = s.loads(token)
     except Exception:
         return None
-    user = User#current_app.config["User"]
-    name = data['user_name']
-    for user_ in user:
-        if user.get('name') == name:
-            return user_
 
-    # user = User.query.get(data["id"])
-    # print(data)
-    # user = {}
-    # return user
+    name = data['user_name']
+    for user_ in user_list:
+        if user_.get('name') == name:
+            return user_
 
 
 def login_required(view_func):
@@ -67,24 +62,12 @@ class User(Resource):
     decorators = [login_required]
 
     def get(self):
-        """
-        Returns list of white ip
-        """
 
         token = request.headers["X-token"]
         user_dict = verify_token(token)
 
-        # data = {
-        #     "phone": user.phone,
-        #     "name": user.name,
-        #     "head_portrait": user.head_portrait,
-        #     "intro": user.intro,
-        #     "level": user.level
-        # }
-
-        user = User#current_app.config["User"]
-        for user_ in user:
-            if user.get('name') == user_dict.get('user_name'):
+        for user_ in user_list:
+            if user_.get('name') == user_dict.get('name'):
                 return user_
 
         # return jsonify(code=0, msg="成功", data=data)
@@ -94,8 +77,6 @@ class User(Resource):
 class Login(Resource):
 
     def post(self):
-
-        # print(current_app.config)
         res_dir = request.get_json()
         if res_dir is None:
             return jsonify(code=4103, msg="未接收到参数")
@@ -103,9 +84,6 @@ class Login(Resource):
         password = res_dir.get("password")
         if not all([name, password]):
             return jsonify(code=4103, msg="请填写name或passwd")
-        #user = User#current_app.config["User"]
-
-        print({'name': name, 'passwd': str_md5(password)})
         if {'name': name, 'passwd': str_md5(password)} not in user_list:
             return dict(code=4103, msg="not in user list ")
         token = create_token(name)

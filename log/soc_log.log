@@ -147,3 +147,39 @@ Traceback (most recent call last):
   File "/Users/njcx/peppa_soc_f/app/user/views.py", line 144, in post
     if {'name': name, 'passwd': str_md5(password)} not in user:
 TypeError: argument of type 'MethodViewType' is not iterable
+2020-04-29 17:14:11,326 - ERROR - app.py - log_exception - app - 1892 - Exception on /user/detail [GET]
+Traceback (most recent call last):
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask_restx/api.py", line 375, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/njcx/peppa_soc_f/app/user/views.py", line 60, in verify_token
+    return view_func(*args, **kwargs)
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask_restx/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/njcx/peppa_soc_f/app/user/views.py", line 107, in get
+  File "/Users/njcx/peppa_soc_f/app/user/views.py", line 38, in verify_token
+    for user_ in user:
+TypeError: 'MethodViewType' object is not iterable
+2020-04-29 17:15:25,255 - ERROR - app.py - log_exception - app - 1892 - Exception on /user/detail [GET]
+Traceback (most recent call last):
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask_restx/api.py", line 375, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/njcx/peppa_soc_f/app/user/views.py", line 60, in verify_token
+    return view_func(*args, **kwargs)
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/njcx/pyenv3_soc/lib/python3.7/site-packages/flask_restx/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/njcx/peppa_soc_f/app/user/views.py", line 107, in get
+  File "/Users/njcx/peppa_soc_f/app/user/views.py", line 38, in verify_token
+    for user_ in user_list:
+TypeError: 'MethodViewType' object is not iterable

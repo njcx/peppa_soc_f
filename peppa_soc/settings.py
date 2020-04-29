@@ -39,7 +39,7 @@ config = {
 }
 
 
-Env = 'prod'
+Env = 'dev'
 
 
 User = [{'name': 'test', 'passwd': "098f6bcd4621d373cade4e832627b4f6"},

@@ -41,12 +41,20 @@ class User(object):
         html_detail(r)
 
     def user_detail(self):
-        pass
+
+        header = {'content-type': 'application/json',
+                  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) '
+                                'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.15 Safari/537.36',
+                  'X-token' :'eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE1MTU1NSwiZXhwIjoxNTg4MTU1MTU1fQ.eyJ1c2VyX25hbWUiOiJuamN4In0.vdgljMLqgESOdKycG1dL0ROfP912DJtSr0Bv-sY97yt8HBL-1h01JSgsrZyv4RJUBS6sVh1RpBoO-lzbYx_MKA'
+                  }
+        r = get(self.user_detail_, header=header)
+        html_detail(r)
 
 
 if __name__ == '__main__':
 
     user = User()
     user.login()
+    user.user_detail()
 
 
