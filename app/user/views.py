@@ -62,38 +62,6 @@ def login_required(view_func):
     return verify_token
 
 
-# @user_n.route("/login", methods=["POST"])
-# def login():
-#     res_dir = request.get_json()
-#     if res_dir is None:
-#         return jsonify(code=4103, msg="未接收到参数")
-#     name = res_dir.get("name")
-#     password = res_dir.get("password")
-#     if not all([name, password]):
-#         return jsonify(code=4103, msg="请填写name或passwd")
-#     user = current_app.config["User"]
-#     if {'name': name, 'passwd': str_md5(password)} not in user:
-#         return jsonify(code=4103, msg="not in user list ")
-#     token = create_token(name)
-#     return jsonify(code=0, msg="成功", data=token)
-
-
-# @user_n.route("/user/detail")
-# @login_required
-# def userInfo():
-#     token = request.headers["X-token"]
-#     user = verify_token(token)
-#     data = {
-#         "phone": user.phone,
-#         "name": user.name,
-#         "head_portrait": user.head_portrait,
-#         "intro": user.intro,
-#         "level": user.level
-#     }
-#
-#     return jsonify(code=0, msg="成功", data=data)
-
-
 @user_n.route('/detail')
 class User(Resource):
     decorators = [login_required]
