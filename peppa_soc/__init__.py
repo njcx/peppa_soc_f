@@ -1,7 +1,8 @@
 from .settings import *
 from flask import Flask
 from flask_restx import Api
-
+from flask_login import LoginManager
+login_manager = LoginManager()
 
 authorizations = {
     'apikey': {
@@ -31,4 +32,5 @@ def create_app(config_name):
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
     api.init_app(app)
+    login_manager.init_app(app)
     return app

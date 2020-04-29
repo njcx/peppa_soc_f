@@ -3,6 +3,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
+    SECRET_KEY = 'ahuiufkjjk'
     Redis_Host = '127.0.0.1'
     Redis_Port = 6379
     Redis_Pw = ''
@@ -39,3 +40,7 @@ config = {
 
 
 Env = 'prod'
+
+
+User = [{'name': 'test', 'passwd': "098f6bcd4621d373cade4e832627b4f6"},
+        {'name': 'njcx', 'passwd': "b23ab49fa9fbf142b809f2279ddec04b"}]
